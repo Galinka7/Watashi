@@ -1,0 +1,16 @@
+ h1 a {
+color: #FFFAF0;
+font-family: 'Lobster';
+}
+
+ /*a {
+        color: #D2691E;
+        font-family: 'Lobster';
+    }*/
+    body {
+         padding-left: 15px;
+     }
+.page-header {
+  background-image: url('/static/img/Nature.jpg');
+  height: 300px;
+}

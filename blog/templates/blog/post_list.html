@@ -1,14 +1,18 @@
-<html>
+ {% load staticfiles %}
+ <html>
   <head>
-      <title>Django Girls blog</title>
+      <title>Django Galinka blog</title>
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+          <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+           <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
   </head>
   <body>
-      <div>
+      <div class="page-header">
           <h1><a href="">Django Girls Blog</a></h1>
       </div>
 
       {% for post in posts %}
-          <li>{{ post.title }}</li>
 
       <div>
           <p>published: {{ post.published_date }}</p>
@@ -18,17 +22,4 @@
       {% endfor %}
 
   </body>
-</html>
-
-
-
-
-
-<html>
-    <p>Hi there!</p>
-    <ul>
-    {% for post in posts %}
-        <li>{{ post.title }}</li>
-    {% endfor %}
-    </ul>
 </html>
